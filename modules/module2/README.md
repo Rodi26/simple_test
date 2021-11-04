@@ -43,6 +43,6 @@ Example
 
 ---
 ```hcl
-### hello world module 1
+### hello world module 2
 ```
 <!-- END_TF_DOCS -->
