@@ -4,7 +4,7 @@ variable "aws_accountnumber" {
 }
 
 variable "aws_region" {
-  type = string
+  type        = string
   description = "aws region"
 }
 
@@ -21,7 +21,7 @@ variable "project" {
 
 variable "common_tags" {
   validation {
-    condition = length(var.common_tags) == 2 && contains(["dev","test","prod"], var.common_tags.Environment) && contains(["true"], var.common_tags.Terraformed)
+    condition     = length(var.common_tags) == 2 && contains(["dev", "test", "prod"], var.common_tags.Environment) && contains(["true"], var.common_tags.Terraformed)
     error_message = "Invalid resource tags applied."
   }
   description = "tags, all resources must have"
