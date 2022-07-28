@@ -1,6 +1,6 @@
 terraform {
 
-  required_version = "~> 0.0.10"
+  required_version = ">=0.0.10"
 
   required_providers {
     aws = {
